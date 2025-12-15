@@ -16,11 +16,11 @@ public class Registration {
     private static final Duration DEFAULT = Duration.ofSeconds(10);
 
     private static final By REGISTER_FORM_HEADING = By.xpath(".//*[text()='Регистрация']");
-    private static final By INPUT_NAME = By.xpath(".//fieldset[1]//input");
-    private static final By INPUT_EMAIL = By.xpath(".//fieldset[2]//input");
-    private static final By INPUT_PASSWORD = By.xpath(".//fieldset[3]//input");
+    private static final By INPUT_NAME = By.xpath("//input[@name='name']");
+    private static final By INPUT_EMAIL = By.xpath("//label[text()='Email']/following-sibling::input");
+    private static final By INPUT_PASSWORD = By.xpath("//input[@name='Пароль']");
     private static final By REGISTER_BUTTON = By.xpath(".//button[text()='Зарегистрироваться']");
-    private static final By ERROR_PASSWORD = By.xpath(".//fieldset[3]//p");
+    private static final By ERROR_PASSWORD = By.xpath("//p[contains(@class, 'input__error')]");
     private static final By ALREADY_REGISTERED_LOGIN_LINK = By.xpath(".//*[text()='Уже зарегистрированы?']/a");
 
     public Registration(WebDriver driver) {

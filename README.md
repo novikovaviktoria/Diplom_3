@@ -14,8 +14,8 @@ Selenium WebDriver
 RestAssured
 Allure Framework 
 Maven 
-WebDriverManager 
-
+WebDriverManager
+Добавлены  @DaTa и @AllArgsConstructor из библиотеки Lombok, для генерации кода
 
 ## Выбор браузера
 
